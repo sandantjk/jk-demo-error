@@ -4,8 +4,8 @@ import (
 	"flag"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
-	"jk-demo-error/internal/conf"
-	"jk-demo-error/internal/service"
+	"github.com/sandantjk/jk-demo-error/internal/conf"
+	"github.com/sandantjk/jk-demo-error/internal/service"
 )
 
 const configFile = "./configs/application.yml"
@@ -15,13 +15,13 @@ func main() {
 	flag.Int64Var(&id, "i", id, "用户ID")
 	flag.Parse()
 	initApp()
+	defer closeApp()
 	// 业务处理
 	err := service.PrintUserInfo(id)
 	// 框架统一处理异常
 	if err != nil {
 		fmt.Println(fmt.Sprintf("访问数据库发上错误:\n%+v", err))
 	}
-	defer closeApp()
 }
 
 // 初始化

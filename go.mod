@@ -1,4 +1,4 @@
-module jk-demo-error
+module github.com/sandantjk/jk-demo-error
 
 go 1.16
 

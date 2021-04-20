@@ -3,7 +3,7 @@ package dao
 import (
 	"database/sql"
 	"github.com/pkg/errors"
-	"jk-demo-error/internal/model"
+	"github.com/sandantjk/jk-demo-error/internal/model"
 )
 
 // GetUserById 根据用户ID查询用户信息

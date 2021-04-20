@@ -3,8 +3,7 @@ package conf
 import "database/sql"
 
 type Config struct {
-	ServerPort int      `yaml:"serverPort" json:"serverPort"`
-	DB         DBConfig `yaml:"db" json:"db"`
+	DB DBConfig `yaml:"db" json:"db"`
 }
 
 type DBConfig struct {
@@ -17,7 +16,5 @@ type DBConfig struct {
 
 var (
 	Global *Config
-	DB *sql.DB
+	DB     *sql.DB
 )
-
-

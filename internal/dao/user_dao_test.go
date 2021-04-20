@@ -3,7 +3,7 @@ package dao
 import (
 	"database/sql"
 	_ "github.com/go-sql-driver/mysql"
-	"jk-demo-error/internal/conf"
+	"github.com/sandantjk/github.com/sandantjk/jk-demo-error/internal/conf"
 	"testing"
 )
 

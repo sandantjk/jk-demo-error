@@ -2,9 +2,10 @@ package service
 
 import (
 	"fmt"
-	"jk-demo-error/internal/conf"
-	"jk-demo-error/internal/dao"
+	"github.com/sandantjk/jk-demo-error/internal/conf"
+	"github.com/sandantjk/jk-demo-error/internal/dao"
 )
+
 // PrintUserInfo 打印用户信息
 // 处理业务逻辑，将非业务错误返回给框架处理
 func PrintUserInfo(id int64) error {
