@@ -1,0 +1,7 @@
+serverPort: 8081
+db:
+  userName: func_base
+  password: FuncBase123
+  host: localhost
+  port: 3306
+  dbName: func_base
